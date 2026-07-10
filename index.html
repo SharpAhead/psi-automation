@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +37,6 @@
 
   body { font-family: 'Montserrat', sans-serif; background: var(--off-white); color: var(--text); font-size: 14px; line-height: 1.6; min-height: 100vh; }
 
-  /* ── Top bar ──────────────────────────────────── */
   .topbar {
     background: var(--navy);
     padding: 0 2rem;
@@ -48,31 +46,14 @@
     height: 64px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.18);
   }
-
   .topbar-logo { display: flex; align-items: center; height: 36px; }
   .topbar-logo svg { height: 36px; width: auto; }
-
   .topbar-right { display: flex; gap: 10px; align-items: center; }
 
-  /* ── Page ─────────────────────────────────────── */
   .page { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
-
   .page-title { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
   .page-sub   { font-size: 13px; color: var(--text-2); margin-bottom: 1.75rem; }
 
-  /* ── Setup banner ─────────────────────────────── */
-  #setup-banner {
-    background: var(--cyan-light);
-    border: 1px solid var(--cyan);
-    border-radius: var(--radius-lg);
-    padding: 1rem 1.25rem;
-    margin-bottom: 1.5rem;
-    display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;
-  }
-  #setup-banner p { font-size: 13px; color: var(--navy); }
-  #setup-banner a { color: var(--cyan-dark); font-weight: 600; }
-
-  /* ── Cards ────────────────────────────────────── */
   .card {
     background: var(--white);
     border: 1px solid var(--border);
@@ -82,7 +63,6 @@
     box-shadow: var(--shadow);
   }
 
-  /* ── Buttons ──────────────────────────────────── */
   button, .btn {
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
@@ -98,33 +78,16 @@
     text-transform: uppercase;
   }
   button:hover { background: var(--off-white); border-color: var(--navy); }
-
-  button.primary {
-    background: var(--pink);
-    color: var(--white);
-    border-color: var(--pink);
-  }
+  button.primary { background: var(--pink); color: var(--white); border-color: var(--pink); }
   button.primary:hover { background: var(--pink-dark); border-color: var(--pink-dark); }
-
-  button.cyan {
-    background: var(--cyan);
-    color: var(--white);
-    border-color: var(--cyan);
-  }
+  button.cyan { background: var(--cyan); color: var(--white); border-color: var(--cyan); }
   button.cyan:hover { background: var(--cyan-dark); border-color: var(--cyan-dark); }
-
-  button.ghost {
-    background: transparent;
-    border-color: var(--cyan);
-    color: var(--cyan-dark);
-  }
+  button.ghost { background: transparent; border-color: var(--cyan); color: var(--cyan-dark); }
   button.ghost:hover { background: var(--cyan-light); }
-
   button.danger { color: var(--poor); border-color: var(--poor-bg); background: transparent; }
   button.danger:hover { background: var(--poor-bg); }
   button:disabled { opacity: 0.4; cursor: not-allowed; }
 
-  /* ── Tabs ─────────────────────────────────────── */
   .tabs { display: flex; gap: 0; margin-bottom: 1.5rem; border-bottom: 2px solid var(--border); }
   .tab {
     padding: 10px 18px;
@@ -145,24 +108,20 @@
   .tab-content { display: none; }
   .tab-content.active { display: block; }
 
-  /* ── Badges ───────────────────────────────────── */
   .badge { display: inline-block; padding: 2px 9px; border-radius: 20px; font-size: 11px; font-weight: 600; letter-spacing: 0.02em; }
   .badge-good { background: var(--good-bg); color: var(--good); }
   .badge-warn { background: var(--warn-bg); color: var(--warn); }
   .badge-poor { background: var(--poor-bg); color: var(--poor); }
   .badge-na   { background: var(--off-white); color: var(--text-3); }
 
-  /* ── Score colours ───────────────────────────── */
   .score-good { color: var(--good); }
   .score-warn { color: var(--warn); }
   .score-poor { color: var(--poor); }
   .na-val     { color: var(--text-3); }
-
   .pass  { color: var(--good); font-weight: 600; }
   .fail  { color: var(--poor); font-weight: 600; }
   .needs { color: var(--warn); font-weight: 600; }
 
-  /* ── Form elements ───────────────────────────── */
   label { font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-2); display: block; margin-bottom: 5px; }
   input, select {
     background: var(--white);
@@ -178,17 +137,8 @@
   input:focus, select:focus { outline: none; border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(0,180,194,0.12); }
   .field { margin-bottom: 14px; }
 
-  /* ── Section heading ─────────────────────────── */
-  h3.section-label {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--text-3);
-    margin-bottom: 14px;
-  }
+  h3.section-label { font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-3); margin-bottom: 14px; }
 
-  /* ── Client rows ─────────────────────────────── */
   .client-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--border); gap: 12px; }
   .client-row:last-child { border-bottom: none; }
   .client-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--cyan-light); color: var(--cyan-dark); font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -197,7 +147,6 @@
   .client-url  { font-size: 12px; color: var(--text-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .client-actions { display: flex; gap: 6px; flex-shrink: 0; }
 
-  /* ── Results ─────────────────────────────────── */
   .result-block { margin-bottom: 1.25rem; }
   .result-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 1.25rem; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
   .result-client { font-size: 16px; font-weight: 700; color: var(--navy); }
@@ -209,7 +158,6 @@
 
   .device-panel { background: var(--off-white); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.1rem; }
   .device-label { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-3); margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
-  .device-icon { width: 16px; height: 16px; opacity: 0.5; }
 
   .perf-score { font-size: 42px; font-weight: 700; line-height: 1; margin-bottom: 4px; }
   .perf-label { font-size: 11px; color: var(--text-3); margin-bottom: 14px; font-weight: 500; }
@@ -222,7 +170,6 @@
   .cwv-table .threshold { font-size: 10px; color: var(--text-3); }
   .cwv-core-tag { font-size: 9px; font-weight: 700; letter-spacing: 0.04em; background: var(--cyan-light); color: var(--cyan-dark); border-radius: 3px; padding: 1px 4px; margin-left: 4px; vertical-align: middle; }
 
-  /* ── History table ───────────────────────────── */
   .history-table { width: 100%; border-collapse: collapse; font-size: 12px; }
   .history-table th { text-align: left; padding: 8px 12px; font-weight: 700; font-size: 10px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-3); border-bottom: 1px solid var(--border); }
   .history-table td { padding: 9px 12px; border-bottom: 1px solid var(--border); }
@@ -230,40 +177,30 @@
   .trend-up   { color: var(--good); font-size: 11px; font-weight: 600; }
   .trend-down { color: var(--poor); font-size: 11px; font-weight: 600; }
 
-  /* ── Spinner ─────────────────────────────────── */
   .spinner { display: inline-block; width: 13px; height: 13px; border: 2px solid rgba(255,255,255,0.4); border-top-color: #fff; border-radius: 50%; animation: spin 0.7s linear infinite; vertical-align: middle; margin-right: 6px; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
   #status-log { font-size: 12px; color: var(--text-3); margin-top: 10px; min-height: 18px; font-weight: 500; }
 
-  /* ── Empty state ─────────────────────────────── */
   .empty { text-align: center; padding: 2.5rem 1rem; color: var(--text-3); font-size: 13px; }
   .empty-icon { font-size: 30px; margin-bottom: 8px; }
 
-  /* ── Modal ───────────────────────────────────── */
   .modal-backdrop { position: fixed; inset: 0; background: rgba(32,43,66,0.55); display: flex; align-items: center; justify-content: center; z-index: 100; padding: 1rem; }
   .modal { background: var(--white); border-radius: var(--radius-lg); padding: 1.75rem; width: 100%; max-width: 440px; box-shadow: 0 8px 40px rgba(32,43,66,0.18); }
   .modal h2 { font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 1.25rem; }
   .modal-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 1.5rem; }
 
   .notice { font-size: 11px; color: var(--text-3); background: var(--off-white); border-radius: var(--radius); padding: 8px 12px; margin-top: 8px; line-height: 1.5; }
-  .notice a { color: var(--cyan-dark); font-weight: 600; }
 
-  /* ── Accent bar on cards ─────────────────────── */
   .card-accent { border-top: 3px solid var(--cyan); }
-
-  /* ── Flex helpers ────────────────────────────── */
   .flex-between { display: flex; justify-content: space-between; align-items: center; }
   .flex { display: flex; align-items: center; }
   .gap-8  { gap: 8px; }
   .gap-12 { gap: 12px; }
-
-  /* ── Export toolbar ──────────────────────────── */
   .export-bar { display: flex; justify-content: flex-end; gap: 8px; margin-bottom: 1rem; }
 
-  /* ── Print styles ────────────────────────────── */
   @media print {
-    .topbar, .tabs, .export-bar, #setup-banner, #status-log,
+    .topbar, .tabs, .export-bar, #status-log,
     button, .client-actions, .modal-backdrop { display: none !important; }
     body { background: #fff; font-size: 12px; }
     .page { padding: 0; max-width: 100%; }
@@ -271,7 +208,6 @@
     .device-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
     .device-panel { background: #f7f8fa; }
     #print-header { display: block !important; }
-    /* Which section shows is controlled by JS inline styles — no static overrides here */
   }
 </style>
 
@@ -302,63 +238,49 @@
 <!-- TOP BAR -->
 <div class="topbar">
   <div class="topbar-logo">
-    <!-- Sharp Ahead logo (white text version, cyan mark) -->
-    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" viewBox="0 0 261.17 78.73">
-      <defs><style>.cls-1{fill:#fff;}.cls-2{fill:#53dcec;}</style></defs>
-      <g id="Layer_1-2"><g>
-        <path class="cls-2" d="m75.5,67.13C70.56,31.79,45.02,0,38.17,0,30.58,0,0,39.07,0,78.73,4.92,38.63,30.58,25.53,38.17,25.53s33.25,13.36,38.17,53.2c0-3.89-.3-7.76-.84-11.6Z"/>
-        <g>
-          <path class="cls-1" d="m93.93,36.79c-3.08,0-6.18-1.07-8.62-3.25l2.64-3.16c1.83,1.51,3.74,2.47,6.07,2.47,1.83,0,2.93-.73,2.93-1.92v-.06c0-1.13-.7-1.71-4.09-2.58-4.09-1.04-6.73-2.18-6.73-6.21v-.06c0-3.69,2.96-6.12,7.11-6.12,2.96,0,5.49.93,7.55,2.58l-2.32,3.37c-1.8-1.25-3.57-2-5.28-2s-2.61.78-2.61,1.77v.06c0,1.34.87,1.77,4.38,2.67,4.12,1.07,6.44,2.55,6.44,6.09v.06c0,4.03-3.08,6.3-7.46,6.3Z"/>
-          <path class="cls-1" d="m113.49,36.5v-8.68c0-2.09-.99-3.16-2.67-3.16s-2.76,1.07-2.76,3.16v8.68h-4.41V15.32h4.41v7.84c1.02-1.31,2.32-2.5,4.56-2.5,3.34,0,5.28,2.21,5.28,5.78v10.07h-4.41Z"/>
-          <path class="cls-1" d="m129.68,36.5v-1.68c-1.07,1.19-2.55,1.97-4.7,1.97-2.93,0-5.34-1.68-5.34-4.76v-.06c0-3.4,2.58-4.96,6.27-4.96,1.57,0,2.7.26,3.8.64v-.26c0-1.83-1.13-2.84-3.34-2.84-1.68,0-2.87.32-4.29.84l-1.1-3.37c1.71-.75,3.4-1.25,6.04-1.25,4.82,0,6.94,2.5,6.94,6.7v9.03h-4.27Zm.09-6.27c-.75-.35-1.74-.58-2.81-.58-1.89,0-3.05.75-3.05,2.15v.06c0,1.19.99,1.89,2.41,1.89,2.06,0,3.45-1.13,3.45-2.73v-.78Z"/>
-          <path class="cls-1" d="m145.73,25.27c-2.93,0-4.73,1.77-4.73,5.48v5.75h-4.41v-15.56h4.41v3.13c.9-2.15,2.35-3.54,4.96-3.42v4.61h-.23Z"/>
-          <path class="cls-1" d="m156.82,36.79c-2.35,0-3.8-1.07-4.85-2.32v6.68h-4.41v-20.2h4.41v2.23c1.07-1.45,2.55-2.52,4.85-2.52,3.63,0,7.08,2.84,7.08,8.04v.06c0,5.2-3.4,8.04-7.08,8.04Zm2.67-8.1c0-2.58-1.74-4.29-3.8-4.29s-3.77,1.71-3.77,4.29v.06c0,2.58,1.71,4.3,3.77,4.3s3.8-1.68,3.8-4.3v-.06Z"/>
-          <path class="cls-1" d="m189.12,36.5l-1.86-4.56h-8.59l-1.86,4.56h-4.56l8.71-20.46h4.12l8.71,20.46h-4.67Zm-6.15-15.09l-2.7,6.59h5.4l-2.7-6.59Z"/>
-          <path class="cls-1" d="m205.14,36.5v-8.68c0-2.09-.99-3.16-2.67-3.16s-2.76,1.07-2.76,3.16v8.68h-4.41V15.32h4.41v7.84c1.02-1.31,2.32-2.5,4.56-2.5,3.34,0,5.28,2.21,5.28,5.78v10.07h-4.41Z"/>
-          <path class="cls-1" d="m226.67,30.27h-10.83c.44,2,1.83,3.05,3.8,3.05,1.48,0,2.55-.46,3.77-1.6l2.52,2.23c-1.45,1.8-3.54,2.9-6.36,2.9-4.67,0-8.13-3.28-8.13-8.04v-.06c0-4.44,3.16-8.1,7.69-8.1,5.2,0,7.57,4.03,7.57,8.45v.06c0,.44-.03.7-.06,1.1Zm-7.52-6.07c-1.83,0-3.02,1.31-3.37,3.31h6.65c-.26-1.97-1.42-3.31-3.28-3.31Z"/>
-          <path class="cls-1" d="m237.96,36.5v-1.68c-1.07,1.19-2.55,1.97-4.7,1.97-2.93,0-5.34-1.68-5.34-4.76v-.06c0-3.4,2.58-4.96,6.27-4.96,1.57,0,2.7.26,3.8.64v-.26c0-1.83-1.13-2.84-3.34-2.84-1.68,0-2.87.32-4.29.84l-1.1-3.37c1.71-.75,3.4-1.25,6.04-1.25,4.82,0,6.94,2.5,6.94,6.7v9.03h-4.27Zm.09-6.27c-.75-.35-1.74-.58-2.81-.58-1.89,0-3.05.75-3.05,2.15v.06c0,1.19.99,1.89,2.41,1.89,2.06,0,3.45-1.13,3.45-2.73v-.78Z"/>
-          <path class="cls-1" d="m256.1,36.5v-2.23c-1.07,1.45-2.55,2.52-4.85,2.52-3.63,0-7.08-2.84-7.08-8.04v-.06c0-5.19,3.4-8.04,7.08-8.04,2.35,0,3.8,1.07,4.85,2.32v-7.66h4.41v21.19h-4.41Zm.06-7.81c0-2.58-1.71-4.29-3.77-4.29s-3.8,1.68-3.8,4.29v.06c0,2.58,1.74,4.3,3.8,4.3s3.77-1.71,3.77-4.3v-.06Z"/>
-        </g>
-        <g>
-          <path class="cls-1" d="m88.78,57.16h-3.6v-7.57h3.52c1.55,0,2.5.77,2.5,1.96v.02c0,.85-.45,1.33-1,1.63.88.34,1.42.84,1.42,1.86v.02c0,1.38-1.12,2.08-2.83,2.08Zm.76-5.33c0-.5-.39-.78-1.09-.78h-1.64v1.6h1.54c.74,0,1.2-.24,1.2-.8v-.02Zm.42,3.03c0-.51-.38-.82-1.23-.82h-1.93v1.67h1.98c.74,0,1.18-.26,1.18-.82v-.02Z"/>
-          <path class="cls-1" d="m95.61,51.99l-1.17-.94c.75-1.02,1.47-1.57,2.82-1.57,1.61,0,2.61.93,2.61,2.35,0,1.27-.65,1.9-1.99,2.94l-1.23.95h3.3v1.44h-5.6v-1.32l2.52-2.07c.94-.78,1.31-1.19,1.31-1.82s-.42-.98-1.02-.98-.98.32-1.55,1.02Z"/>
-          <path class="cls-1" d="m106.8,57.16h-3.6v-7.57h3.52c1.55,0,2.5.77,2.5,1.96v.02c0,.85-.45,1.33-1,1.63.88.34,1.42.84,1.42,1.86v.02c0,1.38-1.12,2.08-2.83,2.08Zm.76-5.33c0-.5-.39-.78-1.09-.78h-1.64v1.6h1.54c.74,0,1.2-.24,1.2-.8v-.02Zm.42,3.03c0-.51-.38-.82-1.23-.82h-1.93v1.67h1.98c.74,0,1.18-.26,1.18-.82v-.02Z"/>
-          <path class="cls-1" d="m120.67,57.16h-2.95v-7.57h2.95c2.38,0,4.02,1.63,4.02,3.76v.02c0,2.13-1.64,3.79-4.02,3.79Zm2.28-3.79c0-1.34-.92-2.28-2.28-2.28h-1.29v4.57h1.29c1.36,0,2.28-.92,2.28-2.26v-.02Z"/>
-          <path class="cls-1" d="m127.98,57.16v-7.57h1.67v7.57h-1.67Z"/>
-          <path class="cls-1" d="m136.92,57.29c-2.36,0-3.98-1.66-3.98-3.89v-.02c0-2.15,1.68-3.92,3.97-3.92,1.36,0,2.19.37,2.98,1.04l-1.05,1.27c-.58-.49-1.1-.77-1.98-.77-1.21,0-2.17,1.07-2.17,2.36v.02c0,1.38.95,2.4,2.29,2.4.61,0,1.15-.15,1.57-.45v-1.08h-1.68v-1.44h3.29v3.29c-.78.66-1.85,1.2-3.23,1.2Z"/>
-          <path class="cls-1" d="m143.57,57.16v-7.57h1.67v7.57h-1.67Z"/>
-          <path class="cls-1" d="m152.29,51.13v6.04h-1.67v-6.04h-2.3v-1.54h6.27v1.54h-2.3Z"/>
-          <path class="cls-1" d="m162.27,57.16l-.69-1.7h-3.2l-.69,1.7h-1.7l3.25-7.63h1.54l3.25,7.63h-1.74Zm-2.29-5.63l-1.01,2.46h2.01l-1.01-2.46Z"/>
-          <path class="cls-1" d="m166.91,57.16v-7.57h1.67v6.06h3.78v1.51h-5.44Z"/>
-          <path class="cls-1" d="m186.24,57.16v-4.94l-2.13,3.23h-.04l-2.11-3.2v4.91h-1.63v-7.57h1.8l1.99,3.2,1.99-3.2h1.8v7.57h-1.66Z"/>
-          <path class="cls-1" d="m197.08,57.16l-.69-1.7h-3.2l-.69,1.7h-1.7l3.25-7.63h1.54l3.25,7.63h-1.74Zm-2.29-5.63l-1.01,2.46h2.01l-1.01-2.46Z"/>
-          <path class="cls-1" d="m206.32,57.16l-1.62-2.42h-1.31v2.42h-1.67v-7.57h3.46c1.79,0,2.86.94,2.86,2.5v.02c0,1.22-.66,1.99-1.62,2.35l1.85,2.7h-1.95Zm.03-4.99c0-.71-.5-1.08-1.31-1.08h-1.66v2.17h1.69c.81,0,1.28-.43,1.28-1.07v-.02Z"/>
-          <path class="cls-1" d="m216.17,57.16l-2.35-3.22-.88.91v2.31h-1.67v-7.57h1.67v3.31l3.07-3.31h2.01l-3.08,3.21,3.22,4.36h-2Z"/>
-          <path class="cls-1" d="m220.91,57.16v-7.57h5.71v1.48h-4.06v1.54h3.57v1.48h-3.57v1.59h4.11v1.48h-5.77Z"/>
-          <path class="cls-1" d="m233.32,51.13v6.04h-1.67v-6.04h-2.3v-1.54h6.27v1.54h-2.3Z"/>
-          <path class="cls-1" d="m238.71,57.16v-7.57h1.67v7.57h-1.67Z"/>
-          <path class="cls-1" d="m249.32,57.16l-3.67-4.81v4.81h-1.64v-7.57h1.54l3.55,4.66v-4.66h1.64v7.57h-1.42Z"/>
-          <path class="cls-1" d="m257.93,57.29c-2.36,0-3.98-1.66-3.98-3.89v-.02c0-2.15,1.68-3.92,3.97-3.92,1.36,0,2.19.37,2.98,1.04l-1.05,1.27c-.58-.49-1.1-.77-1.98-.77-1.21,0-2.17,1.07-2.17,2.36v.02c0,1.38.95,2.4,2.29,2.4.61,0,1.15-.15,1.57-.45v-1.08h-1.68v-1.44h3.29v3.29c-.78.66-1.85,1.2-3.23,1.2Z"/>
-        </g>
-      </g></g>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 261.17 78.73">
+      <defs><style>.cls-1{fill:#fff}.cls-2{fill:#53dcec}</style></defs>
+      <path class="cls-2" d="m75.5,67.13C70.56,31.79,45.02,0,38.17,0,30.58,0,0,39.07,0,78.73,4.92,38.63,30.58,25.53,38.17,25.53s33.25,13.36,38.17,53.2c0-3.89-.3-7.76-.84-11.6Z"/>
+      <path class="cls-1" d="m93.93,36.79c-3.08,0-6.18-1.07-8.62-3.25l2.64-3.16c1.83,1.51,3.74,2.47,6.07,2.47,1.83,0,2.93-.73,2.93-1.92v-.06c0-1.13-.7-1.71-4.09-2.58-4.09-1.04-6.73-2.18-6.73-6.21v-.06c0-3.69,2.96-6.12,7.11-6.12,2.96,0,5.49.93,7.55,2.58l-2.32,3.37c-1.8-1.25-3.57-2-5.28-2s-2.61.78-2.61,1.77v.06c0,1.34.87,1.77,4.38,2.67,4.12,1.07,6.44,2.55,6.44,6.09v.06c0,4.03-3.08,6.3-7.46,6.3Z"/>
+      <path class="cls-1" d="m113.49,36.5v-8.68c0-2.09-.99-3.16-2.67-3.16s-2.76,1.07-2.76,3.16v8.68h-4.41V15.32h4.41v7.84c1.02-1.31,2.32-2.5,4.56-2.5,3.34,0,5.28,2.21,5.28,5.78v10.07h-4.41Z"/>
+      <path class="cls-1" d="m129.68,36.5v-1.68c-1.07,1.19-2.55,1.97-4.7,1.97-2.93,0-5.34-1.68-5.34-4.76v-.06c0-3.4,2.58-4.96,6.27-4.96,1.57,0,2.7.26,3.8.64v-.26c0-1.83-1.13-2.84-3.34-2.84-1.68,0-2.87.32-4.29.84l-1.1-3.37c1.71-.75,3.4-1.25,6.04-1.25,4.82,0,6.94,2.5,6.94,6.7v9.03h-4.27Zm.09-6.27c-.75-.35-1.74-.58-2.81-.58-1.89,0-3.05.75-3.05,2.15v.06c0,1.19.99,1.89,2.41,1.89,2.06,0,3.45-1.13,3.45-2.73v-.78Z"/>
+      <path class="cls-1" d="m145.73,25.27c-2.93,0-4.73,1.77-4.73,5.48v5.75h-4.41v-15.56h4.41v3.13c.9-2.15,2.35-3.54,4.96-3.42v4.61h-.23Z"/>
+      <path class="cls-1" d="m156.82,36.79c-2.35,0-3.8-1.07-4.85-2.32v6.68h-4.41v-20.2h4.41v2.23c1.07-1.45,2.55-2.52,4.85-2.52,3.63,0,7.08,2.84,7.08,8.04v.06c0,5.2-3.4,8.04-7.08,8.04Zm2.67-8.1c0-2.58-1.74-4.29-3.8-4.29s-3.77,1.71-3.77,4.29v.06c0,2.58,1.71,4.3,3.77,4.3s3.8-1.68,3.8-4.3v-.06Z"/>
+      <path class="cls-1" d="m189.12,36.5l-1.86-4.56h-8.59l-1.86,4.56h-4.56l8.71-20.46h4.12l8.71,20.46h-4.67Zm-6.15-15.09l-2.7,6.59h5.4l-2.7-6.59Z"/>
+      <path class="cls-1" d="m205.14,36.5v-8.68c0-2.09-.99-3.16-2.67-3.16s-2.76,1.07-2.76,3.16v8.68h-4.41V15.32h4.41v7.84c1.02-1.31,2.32-2.5,4.56-2.5,3.34,0,5.28,2.21,5.28,5.78v10.07h-4.41Z"/>
+      <path class="cls-1" d="m226.67,30.27h-10.83c.44,2,1.83,3.05,3.8,3.05,1.48,0,2.55-.46,3.77-1.6l2.52,2.23c-1.45,1.8-3.54,2.9-6.36,2.9-4.67,0-8.13-3.28-8.13-8.04v-.06c0-4.44,3.16-8.1,7.69-8.1,5.2,0,7.57,4.03,7.57,8.45v.06c0,.44-.03.7-.06,1.1Zm-7.52-6.07c-1.83,0-3.02,1.31-3.37,3.31h6.65c-.26-1.97-1.42-3.31-3.28-3.31Z"/>
+      <path class="cls-1" d="m237.96,36.5v-1.68c-1.07,1.19-2.55,1.97-4.7,1.97-2.93,0-5.34-1.68-5.34-4.76v-.06c0-3.4,2.58-4.96,6.27-4.96,1.57,0,2.7.26,3.8.64v-.26c0-1.83-1.13-2.84-3.34-2.84-1.68,0-2.87.32-4.29.84l-1.1-3.37c1.71-.75,3.4-1.25,6.04-1.25,4.82,0,6.94,2.5,6.94,6.7v9.03h-4.27Zm.09-6.27c-.75-.35-1.74-.58-2.81-.58-1.89,0-3.05.75-3.05,2.15v.06c0,1.19.99,1.89,2.41,1.89,2.06,0,3.45-1.13,3.45-2.73v-.78Z"/>
+      <path class="cls-1" d="m256.1,36.5v-2.23c-1.07,1.45-2.55,2.52-4.85,2.52-3.63,0-7.08-2.84-7.08-8.04v-.06c0-5.19,3.4-8.04,7.08-8.04,2.35,0,3.8,1.07,4.85,2.32v-7.66h4.41v21.19h-4.41Zm.06-7.81c0-2.58-1.71-4.29-3.77-4.29s-3.8,1.68-3.8,4.29v.06c0,2.58,1.74,4.3,3.8,4.3s3.77-1.71,3.77-4.3v-.06Z"/>
+      <path class="cls-1" d="m88.78,57.16h-3.6v-7.57h3.52c1.55,0,2.5.77,2.5,1.96v.02c0,.85-.45,1.33-1,1.63.88.34,1.42.84,1.42,1.86v.02c0,1.38-1.12,2.08-2.83,2.08Zm.76-5.33c0-.5-.39-.78-1.09-.78h-1.64v1.6h1.54c.74,0,1.2-.24,1.2-.8v-.02Zm.42,3.03c0-.51-.38-.82-1.23-.82h-1.93v1.67h1.98c.74,0,1.18-.26,1.18-.82v-.02Z"/>
+      <path class="cls-1" d="m95.61,51.99l-1.17-.94c.75-1.02,1.47-1.57,2.82-1.57,1.61,0,2.61.93,2.61,2.35,0,1.27-.65,1.9-1.99,2.94l-1.23.95h3.3v1.44h-5.6v-1.32l2.52-2.07c.94-.78,1.31-1.19,1.31-1.82s-.42-.98-1.02-.98-.98.32-1.55,1.02Z"/>
+      <path class="cls-1" d="m106.8,57.16h-3.6v-7.57h3.52c1.55,0,2.5.77,2.5,1.96v.02c0,.85-.45,1.33-1,1.63.88.34,1.42.84,1.42,1.86v.02c0,1.38-1.12,2.08-2.83,2.08Zm.76-5.33c0-.5-.39-.78-1.09-.78h-1.64v1.6h1.54c.74,0,1.2-.24,1.2-.8v-.02Zm.42,3.03c0-.51-.38-.82-1.23-.82h-1.93v1.67h1.98c.74,0,1.18-.26,1.18-.82v-.02Z"/>
+      <path class="cls-1" d="m120.67,57.16h-2.95v-7.57h2.95c2.38,0,4.02,1.63,4.02,3.76v.02c0,2.13-1.64,3.79-4.02,3.79Zm2.28-3.79c0-1.34-.92-2.28-2.28-2.28h-1.29v4.57h1.29c1.36,0,2.28-.92,2.28-2.26v-.02Z"/>
+      <path class="cls-1" d="m127.98,57.16v-7.57h1.67v7.57h-1.67Z"/>
+      <path class="cls-1" d="m136.92,57.29c-2.36,0-3.98-1.66-3.98-3.89v-.02c0-2.15,1.68-3.92,3.97-3.92,1.36,0,2.19.37,2.98,1.04l-1.05,1.27c-.58-.49-1.1-.77-1.98-.77-1.21,0-2.17,1.07-2.17,2.36v.02c0,1.38.95,2.4,2.29,2.4.61,0,1.15-.15,1.57-.45v-1.08h-1.68v-1.44h3.29v3.29c-.78.66-1.85,1.2-3.23,1.2Z"/>
+      <path class="cls-1" d="m143.57,57.16v-7.57h1.67v7.57h-1.67Z"/>
+      <path class="cls-1" d="m152.29,51.13v6.04h-1.67v-6.04h-2.3v-1.54h6.27v1.54h-2.3Z"/>
+      <path class="cls-1" d="m162.27,57.16l-.69-1.7h-3.2l-.69,1.7h-1.7l3.25-7.63h1.54l3.25,7.63h-1.74Zm-2.29-5.63l-1.01,2.46h2.01l-1.01-2.46Z"/>
+      <path class="cls-1" d="m166.91,57.16v-7.57h1.67v6.06h3.78v1.51h-5.44Z"/>
+      <path class="cls-1" d="m186.24,57.16v-4.94l-2.13,3.23h-.04l-2.11-3.2v4.91h-1.63v-7.57h1.8l1.99,3.2,1.99-3.2h1.8v7.57h-1.66Z"/>
+      <path class="cls-1" d="m197.08,57.16l-.69-1.7h-3.2l-.69,1.7h-1.7l3.25-7.63h1.54l3.25,7.63h-1.74Zm-2.29-5.63l-1.01,2.46h2.01l-1.01-2.46Z"/>
+      <path class="cls-1" d="m206.32,57.16l-1.62-2.42h-1.31v2.42h-1.67v-7.57h3.46c1.79,0,2.86.94,2.86,2.5v.02c0,1.22-.66,1.99-1.62,2.35l1.85,2.7h-1.95Zm.03-4.99c0-.71-.5-1.08-1.31-1.08h-1.66v2.17h1.69c.81,0,1.28-.43,1.28-1.07v-.02Z"/>
+      <path class="cls-1" d="m216.17,57.16l-2.35-3.22-.88.91v2.31h-1.67v-7.57h1.67v3.31l3.07-3.31h2.01l-3.08,3.21,3.22,4.36h-2Z"/>
+      <path class="cls-1" d="m220.91,57.16v-7.57h5.71v1.48h-4.06v1.54h3.57v1.48h-3.57v1.59h4.11v1.48h-5.77Z"/>
+      <path class="cls-1" d="m233.32,51.13v6.04h-1.67v-6.04h-2.3v-1.54h6.27v1.54h-2.3Z"/>
+      <path class="cls-1" d="m238.71,57.16v-7.57h1.67v7.57h-1.67Z"/>
+      <path class="cls-1" d="m249.32,57.16l-3.67-4.81v4.81h-1.64v-7.57h1.54l3.55,4.66v-4.66h1.64v7.57h-1.42Z"/>
+      <path class="cls-1" d="m257.93,57.29c-2.36,0-3.98-1.66-3.98-3.89v-.02c0-2.15,1.68-3.92,3.97-3.92,1.36,0,2.19.37,2.98,1.04l-1.05,1.27c-.58-.49-1.1-.77-1.98-.77-1.21,0-2.17,1.07-2.17,2.36v.02c0,1.38.95,2.4,2.29,2.4.61,0,1.15-.15,1.57-.45v-1.08h-1.68v-1.44h3.29v3.29c-.78.66-1.85,1.2-3.23,1.2Z"/>
     </svg>
   </div>
   <div class="topbar-right">
-    <button onclick="openSettings()" style="color:#fff;border-color:rgba(255,255,255,0.3);background:transparent;">&#9881; Settings</button>
-    <button class="primary" id="run-btn" onclick="runAll()" disabled>&#9654; Run all tests</button>
+    <button id="run-btn" class="primary" onclick="runAll()" disabled>&#9654; Run all tests</button>
   </div>
 </div>
 
 <!-- PAGE -->
 <div class="page">
-
   <p class="page-title">PageSpeed Insights</p>
-  <p class="page-sub">Monthly performance tracker across all clients</p>
-
-  <div id="setup-banner">
-    <p>Add your <strong>Google PageSpeed Insights API key</strong> to get started. <a href="https://developers.google.com/speed/docs/insights/v5/get-started" target="_blank">Get a free key &#8599;</a> — enable the PageSpeed Insights API in Google Cloud Console.</p>
-    <button class="cyan" onclick="openSettings()">Add API key</button>
-  </div>
+  <p class="page-sub">Performance tracker across all clients</p>
 
   <div class="tabs">
     <button class="tab active" onclick="switchTab('clients')">Clients</button>
@@ -375,7 +297,7 @@
         <button class="cyan" onclick="openAddClient()">+ Add client</button>
       </div>
       <div id="client-list">
-        <div class="empty"><div class="empty-icon">&#128202;</div>No clients yet — add one to get started.</div>
+        <div class="empty"><div class="empty-icon">&#128202;</div>Loading&hellip;</div>
       </div>
     </div>
     <div id="status-log"></div>
@@ -409,32 +331,6 @@
       <div class="empty" style="padding:3rem 1rem"><div class="empty-icon">&#128200;</div>Need at least two runs per client to show changes.</div>
     </div>
   </div>
-
-</div>
-
-<!-- SETTINGS MODAL -->
-<div id="modal-settings" class="modal-backdrop" style="display:none">
-  <div class="modal">
-    <h2>Settings</h2>
-    <div class="field">
-      <label>Google PSI API key</label>
-      <input type="password" id="settings-apikey" placeholder="AIza..." />
-      <p class="notice">Stored locally in your browser only — never sent anywhere except Google's API. <a href="https://developers.google.com/speed/docs/insights/v5/get-started" target="_blank">Get a free key &#8599;</a></p>
-    </div>
-    <div style="border-top:1px solid var(--border);margin:1.25rem 0;padding-top:1.25rem">
-      <label style="margin-bottom:8px">Data backup</label>
-      <p class="notice" style="margin-bottom:10px">Exporting saves all clients, results, and history to a file on your computer. Import it any time to restore — useful if you clear your browser data.</p>
-      <div style="display:flex;gap:8px;flex-wrap:wrap">
-        <button onclick="exportDataBackup()">&#128190; Export data backup</button>
-        <button onclick="document.getElementById('import-file').click()">&#128228; Import data backup</button>
-        <input type="file" id="import-file" accept=".json" style="display:none" onchange="importDataBackup(this)" />
-      </div>
-    </div>
-    <div class="modal-actions">
-      <button onclick="closeModal('modal-settings')">Cancel</button>
-      <button class="primary" onclick="saveSettings()">Save</button>
-    </div>
-  </div>
 </div>
 
 <!-- ADD CLIENT MODAL -->
@@ -452,20 +348,22 @@
     </div>
     <div class="modal-actions">
       <button onclick="closeModal('modal-add-client')">Cancel</button>
-      <button class="primary" onclick="saveClient()">Add client</button>
+      <button class="primary" id="save-client-btn" onclick="saveClient()">Add client</button>
     </div>
   </div>
 </div>
 
 <script>
-const STORE = 'psi_v2';
-let state = JSON.parse(localStorage.getItem(STORE) || '{"apiKey":"","clients":[],"results":{},"history":[]}');
-if (!state.clients) state.clients = [];
-if (!state.results) state.results = {};
-if (!state.history) state.history = [];
+// ── Config ────────────────────────────────────────────────────────────────────
+const PSI_KEY  = 'AIzaSyC7EBbtJhC4i1blOR2_QvrOG6j-TMsEUkg'; // replace with your Google PSI API key
+const AT_TOKEN = 'patnghJLzJHzTClG9.097d19a26cf90a6f8ad322447719dbaf4570d31e1428ab3c99a60377787e6e4e';
+const AT_BASE  = 'appjihivxs7ZjhCWc';
+const AT_URL   = `https://api.airtable.com/v0/${AT_BASE}`;
 
-function persist() { localStorage.setItem(STORE, JSON.stringify(state)); }
+// ── State ─────────────────────────────────────────────────────────────────────
+let state = { clients: [], results: {}, history: [] };
 
+// ── Metric thresholds ─────────────────────────────────────────────────────────
 const THRESHOLDS = {
   lcp:  { good: 2500, poor: 4000, label: 'LCP',  display: v => (v/1000).toFixed(2)+'s',  goodLabel:'< 2.5s',  poorLabel:'> 4s'    },
   cls:  { good: 0.1,  poor: 0.25, label: 'CLS',  display: v => v.toFixed(3),              goodLabel:'< 0.1',   poorLabel:'> 0.25'  },
@@ -478,19 +376,150 @@ function cwvStatus(metric, value) {
   if (value === null || value === undefined) return 'na';
   const t = THRESHOLDS[metric];
   if (value <= t.good) return 'good';
-  if (value < t.poor) return 'warn';
+  if (value < t.poor)  return 'warn';
   return 'poor';
 }
 
 function scoreClass(s) {
   if (s === null) return 'na-val';
-  if (s >= 90) return 'score-good';
-  if (s >= 50) return 'score-warn';
+  if (s >= 90)   return 'score-good';
+  if (s >= 50)   return 'score-warn';
   return 'score-poor';
 }
 
+// ── Airtable helpers ──────────────────────────────────────────────────────────
+function atHeaders() {
+  return { 'Authorization': `Bearer ${AT_TOKEN}`, 'Content-Type': 'application/json' };
+}
+
+async function atList(table, formula) {
+  let records = [], offset;
+  do {
+    const params = new URLSearchParams();
+    if (formula) params.set('filterByFormula', formula);
+    if (offset)  params.set('offset', offset);
+    const res = await fetch(`${AT_URL}/${encodeURIComponent(table)}?${params}`, { headers: atHeaders() });
+    if (!res.ok) throw new Error(`Airtable ${res.status} on ${table}`);
+    const data = await res.json();
+    records.push(...data.records);
+    offset = data.offset;
+  } while (offset);
+  return records;
+}
+
+async function atCreate(table, fields) {
+  const res = await fetch(`${AT_URL}/${encodeURIComponent(table)}`, {
+    method: 'POST', headers: atHeaders(),
+    body: JSON.stringify({ fields })
+  });
+  if (!res.ok) { const e = await res.json().catch(() => ({})); throw new Error(`Airtable ${res.status}: ${e?.error?.message || ''}`); }
+  return res.json();
+}
+
+async function atUpdate(table, recordId, fields) {
+  const res = await fetch(`${AT_URL}/${encodeURIComponent(table)}/${recordId}`, {
+    method: 'PATCH', headers: atHeaders(),
+    body: JSON.stringify({ fields })
+  });
+  if (!res.ok) throw new Error(`Airtable update ${res.status}`);
+  return res.json();
+}
+
+async function atDelete(table, recordId) {
+  const res = await fetch(`${AT_URL}/${encodeURIComponent(table)}/${recordId}`, {
+    method: 'DELETE', headers: atHeaders()
+  });
+  if (!res.ok) throw new Error(`Airtable delete ${res.status}`);
+}
+
+// ── Load all state from Airtable on page load ─────────────────────────────────
+async function loadState() {
+  const [clientRecs, resultRecs, historyRecs] = await Promise.all([
+    atList('Clients'),
+    atList('Results'),
+    atList('History'),
+  ]);
+
+  state.clients = clientRecs.map(r => ({
+    id:          r.fields.ClientId,
+    name:        r.fields.Name,
+    url:         r.fields.URL,
+    _airtableId: r.id,
+  })).filter(c => c.id && c.name);
+
+  state.results = {};
+  resultRecs.forEach(r => {
+    try {
+      const obj = JSON.parse(r.fields.Data || 'null');
+      if (obj && obj.clientId) { obj._airtableId = r.id; state.results[obj.clientId] = obj; }
+    } catch {}
+  });
+
+  state.history = historyRecs.map(r => {
+    try {
+      const obj = JSON.parse(r.fields.Data || 'null');
+      if (obj && obj.clientId) { obj._airtableId = r.id; return obj; }
+    } catch {}
+    return null;
+  }).filter(Boolean).sort((a, b) => a.timestamp.localeCompare(b.timestamp));
+}
+
+// ── Map result → Airtable field values ───────────────────────────────────────
+function resultToFields(result) {
+  const mob  = result.mobile, dsk = result.desktop;
+  const mlab = mob.field || mob.lab;
+  const dlab = dsk.field || dsk.lab;
+  const { _airtableId, ...clean } = result;
+  return {
+    ClientId:     result.clientId,
+    ClientName:   result.name,
+    URL:          result.url,
+    Timestamp:    result.timestamp,
+    MobileScore:  mob.score  ?? null,
+    DesktopScore: dsk.score  ?? null,
+    MobileLCP:    mlab?.lcp  ?? null,
+    MobileCLS:    mlab?.cls  ?? null,
+    MobileINP:    mlab?.inp  ?? null,
+    DesktopLCP:   dlab?.lcp  ?? null,
+    DesktopCLS:   dlab?.cls  ?? null,
+    DesktopINP:   dlab?.inp  ?? null,
+    DataSource:   mob.field ? 'field' : 'lab',
+    Data:         JSON.stringify(clean),
+  };
+}
+
+// ── Save result: upsert Results + append History ──────────────────────────────
+async function saveResult(result) {
+  const fields = resultToFields(result);
+
+  if (state.results[result.clientId]?._airtableId) {
+    await atUpdate('Results', state.results[result.clientId]._airtableId, fields);
+    result._airtableId = state.results[result.clientId]._airtableId;
+  } else {
+    const rec = await atCreate('Results', fields);
+    result._airtableId = rec.id;
+  }
+  state.results[result.clientId] = result;
+
+  const histRec   = await atCreate('History', fields);
+  const histEntry = { ...result, _airtableId: histRec.id };
+  state.history.push(histEntry);
+
+  // Cap at 3 runs per client
+  const runs = state.history
+    .filter(h => h.clientId === result.clientId)
+    .sort((a, b) => a.timestamp.localeCompare(b.timestamp));
+  if (runs.length > 3) {
+    const toDelete = runs.slice(0, runs.length - 3);
+    await Promise.all(toDelete.map(r => r._airtableId ? atDelete('History', r._airtableId) : Promise.resolve()));
+    const gone = new Set(toDelete.map(r => r._airtableId));
+    state.history = state.history.filter(h => !gone.has(h._airtableId));
+  }
+}
+
+// ── PSI API ───────────────────────────────────────────────────────────────────
 async function fetchPSI(url, strategy) {
-  const endpoint = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(url)}&strategy=${strategy}&key=${state.apiKey}`;
+  const endpoint = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(url)}&strategy=${strategy}&key=${PSI_KEY}`;
   const res = await fetch(endpoint);
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
@@ -500,51 +529,41 @@ async function fetchPSI(url, strategy) {
 }
 
 function extractMetrics(data) {
-  const lhr = data.lighthouseResult;
+  const lhr    = data.lighthouseResult;
   const audits = lhr?.audits || {};
-  const score = lhr?.categories?.performance?.score;
-  const get = (key) => { const a = audits[key]; return (!a || a.numericValue === undefined) ? null : a.numericValue; };
-  const field = data.loadingExperience?.metrics || {};
+  const score  = lhr?.categories?.performance?.score;
+  const get    = key => { const a = audits[key]; return (!a || a.numericValue === undefined) ? null : a.numericValue; };
+  const field  = data.loadingExperience?.metrics || {};
   const fieldLcp = field.LARGEST_CONTENTFUL_PAINT_MS?.percentile ?? null;
   const fieldCls = field.CUMULATIVE_LAYOUT_SHIFT_SCORE ? field.CUMULATIVE_LAYOUT_SHIFT_SCORE.percentile / 100 : null;
   const fieldInp = field.INTERACTION_TO_NEXT_PAINT?.percentile ?? null;
   const hasField = data.loadingExperience?.overall_category !== undefined;
   return {
     score: score !== null && score !== undefined ? Math.round(score * 100) : null,
-    lab: {
-      lcp:  get('largest-contentful-paint'),
-      cls:  get('cumulative-layout-shift'),
-      inp:  get('interaction-to-next-paint') ?? get('experimental-interaction-to-next-paint'),
-      fcp:  get('first-contentful-paint'),
-      ttfb: get('server-response-time'),
-    },
+    lab:   { lcp: get('largest-contentful-paint'), cls: get('cumulative-layout-shift'), inp: get('interaction-to-next-paint') ?? get('experimental-interaction-to-next-paint'), fcp: get('first-contentful-paint'), ttfb: get('server-response-time') },
     field: hasField ? { lcp: fieldLcp, cls: fieldCls, inp: fieldInp } : null,
-    overallCategory: data.loadingExperience?.overall_category ?? null,
   };
 }
 
+// ── Run tests ─────────────────────────────────────────────────────────────────
 let running = false;
 
 async function runAll() {
-  if (running || !state.apiKey || !state.clients.length) return;
+  if (running || !state.clients.length) return;
   running = true;
   document.getElementById('run-btn').disabled = true;
   document.getElementById('run-btn').innerHTML = '<span class="spinner"></span>Running&hellip;';
   const timestamp = new Date().toISOString();
-  const monthKey = timestamp.slice(0, 7);
+  const monthKey  = timestamp.slice(0, 7);
   for (const client of state.clients) {
     log(`Testing ${client.name}&hellip;`);
     try {
       const [mobData, dskData] = await Promise.all([fetchPSI(client.url, 'mobile'), fetchPSI(client.url, 'desktop')]);
       const result = { clientId: client.id, name: client.name, url: client.url, timestamp, monthKey, mobile: extractMetrics(mobData), desktop: extractMetrics(dskData) };
-      state.results[client.id] = result;
-      state.history.push(result);
-      const runs = state.history.filter(h => h.clientId === client.id);
-      if (runs.length > 3) state.history = state.history.filter(h => h.clientId !== client.id).concat(runs.slice(-3));
+      await saveResult(result);
       log(`&#10003; ${client.name} done`);
     } catch (e) { log(`&#10007; ${client.name}: ${e.message}`); }
   }
-  persist();
   running = false;
   document.getElementById('run-btn').disabled = false;
   document.getElementById('run-btn').innerHTML = '&#9654; Run all tests';
@@ -555,33 +574,35 @@ async function runAll() {
 async function runSingle(clientId) {
   if (running) return;
   const client = state.clients.find(c => c.id === clientId);
-  if (!client || !state.apiKey) return;
+  if (!client) return;
   running = true;
   log(`Testing ${client.name}&hellip;`);
   const timestamp = new Date().toISOString();
-  const monthKey = timestamp.slice(0, 7);
+  const monthKey  = timestamp.slice(0, 7);
   try {
     const [mobData, dskData] = await Promise.all([fetchPSI(client.url, 'mobile'), fetchPSI(client.url, 'desktop')]);
     const result = { clientId: client.id, name: client.name, url: client.url, timestamp, monthKey, mobile: extractMetrics(mobData), desktop: extractMetrics(dskData) };
-    state.results[client.id] = result;
-    state.history.push(result);
-    const runs = state.history.filter(h => h.clientId === client.id);
-    if (runs.length > 3) state.history = state.history.filter(h => h.clientId !== client.id).concat(runs.slice(-3));
-    persist(); log(`&#10003; ${client.name} done`);
+    await saveResult(result);
+    log(`&#10003; ${client.name} done`);
     renderResults(); renderHistory(); renderChanges(); switchTab('results');
   } catch (e) { log(`&#10007; ${client.name}: ${e.message}`); }
   running = false;
 }
 
+// ── Render functions ──────────────────────────────────────────────────────────
 function initials(name) {
   return name.split(' ').slice(0,2).map(w => w[0]).join('').toUpperCase();
 }
 
 function renderClients() {
   const el = document.getElementById('client-list');
-  if (!state.clients.length) { el.innerHTML = '<div class="empty"><div class="empty-icon">&#128202;</div>No clients yet — add one to get started.</div>'; return; }
+  if (!state.clients.length) {
+    el.innerHTML = '<div class="empty"><div class="empty-icon">&#128202;</div>No clients yet — add one to get started.</div>';
+    document.getElementById('run-btn').disabled = true;
+    return;
+  }
   el.innerHTML = state.clients.map(c => {
-    const res = state.results[c.id];
+    const res     = state.results[c.id];
     const lastRun = res ? new Date(res.timestamp).toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' }) : null;
     return `<div class="client-row">
       <div class="client-avatar">${esc(initials(c.name))}</div>
@@ -595,17 +616,18 @@ function renderClients() {
       </div>
     </div>`;
   }).join('');
+  document.getElementById('run-btn').disabled = running;
 }
 
 function renderResults() {
-  const el = document.getElementById('results-container');
+  const el      = document.getElementById('results-container');
   const entries = Object.values(state.results);
   if (!entries.length) { el.innerHTML = '<div class="empty" style="padding:3rem 1rem"><div class="empty-icon">&#9654;</div>Run tests to see results here.</div>'; return; }
   el.innerHTML = entries.sort((a,b) => a.name.localeCompare(b.name)).map(r => resultBlock(r)).join('');
 }
 
 function resultBlock(r) {
-  const ts = new Date(r.timestamp);
+  const ts      = new Date(r.timestamp);
   const dateStr = ts.toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric' });
   const timeStr = ts.toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit' });
   return `<div class="card result-block" data-client-id="${esc(r.clientId)}">
@@ -630,21 +652,20 @@ function resultBlock(r) {
 }
 
 function devicePanel(m, label, icon) {
-  const sc = m.score;
-  const cls = sc !== null ? scoreClass(sc) : 'na-val';
+  const sc      = m.score;
+  const cls     = sc !== null ? scoreClass(sc) : 'na-val';
   const metrics = m.field || m.lab;
-  const source = m.field ? 'Field data (CrUX)' : 'Lab data (Lighthouse)';
+  const source  = m.field ? 'Field data (CrUX)' : 'Lab data (Lighthouse)';
   const rows = ['lcp','cls','inp','fcp','ttfb'].map(key => {
-    const t = THRESHOLDS[key];
-    const val = metrics?.[key] ?? (m.lab?.[key] ?? null);
+    const t      = THRESHOLDS[key];
+    const val    = metrics?.[key] ?? (m.lab?.[key] ?? null);
     const isCore = ['lcp','cls','inp'].includes(key);
     const coreTag = isCore ? '<span class="cwv-core-tag">CWV</span>' : '';
     if (val === null) return `<tr><td>${t.label}${coreTag}</td><td class="val na-val">—</td><td></td><td class="threshold">${t.goodLabel}</td></tr>`;
     const status = cwvStatus(key, val);
     const statusHtml = status === 'good'
       ? `<span class="pass">${isCore ? 'Pass' : 'Good'}</span>`
-      : status === 'warn'
-      ? `<span class="needs">Needs work</span>`
+      : status === 'warn' ? `<span class="needs">Needs work</span>`
       : `<span class="fail">${isCore ? 'Fail' : 'Poor'}</span>`;
     return `<tr><td>${t.label}${coreTag}</td><td class="val">${t.display(val)}</td><td>${statusHtml}</td><td class="threshold">${t.goodLabel}</td></tr>`;
   }).join('');
@@ -661,21 +682,22 @@ function devicePanel(m, label, icon) {
 
 function renderHistory() {
   const el = document.getElementById('history-container');
-  if (!state.history.length) { el.innerHTML = '<div class="empty" style="padding:3rem 1rem"><div class="empty-icon">&#128337;</div>No history yet.</div>'; return; }
+  if (!state.history.length) { el.innerHTML = '<div class="empty" style="padding:3rem 1rem"><div class="empty-icon">&#128337;</div>No history yet — run tests to build a record.</div>'; return; }
   const clientIds = [...new Set(state.history.map(h => h.clientId))];
   el.innerHTML = clientIds.map(id => {
     const entries = state.history.filter(h => h.clientId === id).sort((a,b) => a.timestamp.localeCompare(b.timestamp));
-    const name = entries[0].name;
-    const rows = entries.map((e, i) => {
-      const prev = i > 0 ? entries[i-1] : null;
-      const ms = e.mobile.score, ds = e.desktop.score;
-      const prevMs = prev?.mobile.score;
-      const delta = (ms !== null && prevMs !== null) ? ms - prevMs : null;
+    const name    = entries[0].name;
+    const rows    = entries.map((e, i) => {
+      const prev    = i > 0 ? entries[i-1] : null;
+      const ms      = e.mobile.score, ds = e.desktop.score;
+      const prevMs  = prev?.mobile.score;
+      const delta   = (ms !== null && prevMs !== null) ? ms - prevMs : null;
       const trendHtml = delta === null ? '' : delta > 0 ? `<span class="trend-up"> +${delta}</span>` : delta < 0 ? `<span class="trend-down"> ${delta}</span>` : '';
-      const mLab = e.mobile.field || e.mobile.lab;
+      const mLab    = e.mobile.field || e.mobile.lab;
       const cwvPass = ['lcp','cls','inp'].every(k => { const v = mLab?.[k]; return v === null || cwvStatus(k, v) !== 'poor'; });
+      const runLabel = new Date(e.timestamp).toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
       return `<tr>
-        <td style="font-weight:600">${e.monthKey}</td>
+        <td style="font-weight:600">${runLabel}</td>
         <td class="${scoreClass(ms)}" style="font-weight:700">${ms !== null ? ms : '—'}${trendHtml}</td>
         <td class="${scoreClass(ds)}" style="font-weight:700">${ds !== null ? ds : '—'}</td>
         <td>${mLab?.lcp != null ? THRESHOLDS.lcp.display(mLab.lcp) : '—'}</td>
@@ -687,7 +709,7 @@ function renderHistory() {
     return `<div class="card card-accent" style="margin-bottom:1rem;overflow-x:auto">
       <div style="font-size:15px;font-weight:700;color:var(--navy);margin-bottom:1rem">${esc(name)}</div>
       <table class="history-table">
-        <thead><tr><th>Month</th><th>Mobile score</th><th>Desktop score</th><th>LCP (mob)</th><th>CLS (mob)</th><th>INP (mob)</th><th>CWV</th></tr></thead>
+        <thead><tr><th>Run date</th><th>Mobile score</th><th>Desktop score</th><th>LCP (mob)</th><th>CLS (mob)</th><th>INP (mob)</th><th>CWV</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
     </div>`;
@@ -699,8 +721,8 @@ function fmtRunLabel(ts) {
 }
 
 function renderChanges() {
-  const el = document.getElementById('changes-container');
-  const clientIds = [...new Set(state.history.map(h => h.clientId))];
+  const el         = document.getElementById('changes-container');
+  const clientIds  = [...new Set(state.history.map(h => h.clientId))];
   const comparable = clientIds.filter(id => state.history.filter(h => h.clientId === id).length >= 2);
   if (!comparable.length) {
     el.innerHTML = '<div class="empty" style="padding:3rem 1rem"><div class="empty-icon">&#128200;</div>Need at least two runs per client to show changes.</div>';
@@ -708,35 +730,34 @@ function renderChanges() {
   }
 
   const METRICS = [
-    { key: 'mob_score', label: 'Mobile score',   get: e => e.mobile.score,                        fmt: v => v,                            higherBetter: true,  core: false },
-    { key: 'dsk_score', label: 'Desktop score',  get: e => e.desktop.score,                       fmt: v => v,                            higherBetter: true,  core: false },
-    { key: 'lcp',       label: 'LCP (mobile)',   get: e => (e.mobile.field||e.mobile.lab)?.lcp,   fmt: v => THRESHOLDS.lcp.display(v),   higherBetter: false, core: true  },
-    { key: 'cls',       label: 'CLS (mobile)',   get: e => (e.mobile.field||e.mobile.lab)?.cls,   fmt: v => THRESHOLDS.cls.display(v),   higherBetter: false, core: true  },
-    { key: 'inp',       label: 'INP (mobile)',   get: e => (e.mobile.field||e.mobile.lab)?.inp,   fmt: v => THRESHOLDS.inp.display(v),   higherBetter: false, core: true  },
-    { key: 'fcp',       label: 'FCP (mobile)',   get: e => (e.mobile.field||e.mobile.lab)?.fcp,   fmt: v => THRESHOLDS.fcp.display(v),   higherBetter: false, core: false },
+    { key:'mob_score', label:'Mobile score',  get: e => e.mobile.score,                       fmt: v => v,                          higherBetter:true,  core:false },
+    { key:'dsk_score', label:'Desktop score', get: e => e.desktop.score,                      fmt: v => v,                          higherBetter:true,  core:false },
+    { key:'lcp',       label:'LCP (mobile)',  get: e => (e.mobile.field||e.mobile.lab)?.lcp,  fmt: v => THRESHOLDS.lcp.display(v), higherBetter:false, core:true  },
+    { key:'cls',       label:'CLS (mobile)',  get: e => (e.mobile.field||e.mobile.lab)?.cls,  fmt: v => THRESHOLDS.cls.display(v), higherBetter:false, core:true  },
+    { key:'inp',       label:'INP (mobile)',  get: e => (e.mobile.field||e.mobile.lab)?.inp,  fmt: v => THRESHOLDS.inp.display(v), higherBetter:false, core:true  },
+    { key:'fcp',       label:'FCP (mobile)',  get: e => (e.mobile.field||e.mobile.lab)?.fcp,  fmt: v => THRESHOLDS.fcp.display(v), higherBetter:false, core:false },
   ];
 
   const blocks = comparable.map(id => {
     const entries = state.history.filter(h => h.clientId === id).sort((a,b) => a.timestamp.localeCompare(b.timestamp));
-    const prev = entries[entries.length - 2];
-    const curr = entries[entries.length - 1];
-    const name = curr.name;
+    const prev    = entries[entries.length - 2];
+    const curr    = entries[entries.length - 1];
 
     const rows = METRICS.map(m => {
       const vPrev = m.get(prev), vCurr = m.get(curr);
-      if (vPrev === null || vPrev === undefined || vCurr === null || vCurr === undefined) return null;
-      const delta = vCurr - vPrev;
+      if (vPrev == null || vCurr == null) return null;
+      const delta    = vCurr - vPrev;
       if (delta === 0) return null;
       const improved = m.higherBetter ? delta > 0 : delta < 0;
-      const sign = delta > 0 ? '+' : '';
+      const sign     = delta > 0 ? '+' : '';
       const deltaFmt = m.key === 'lcp' || m.key === 'fcp'
         ? `${sign}${(delta/1000).toFixed(2)}s`
         : m.key === 'cls' ? `${sign}${delta.toFixed(3)}`
         : m.key === 'inp' ? `${sign}${Math.round(delta)}ms`
         : `${sign}${delta}`;
-      const arrow = improved ? '&#8679;' : '&#8681;';
-      const color = improved ? 'var(--good)' : 'var(--poor)';
-      const bg    = improved ? 'var(--good-bg)' : 'var(--poor-bg)';
+      const arrow   = improved ? '&#8679;' : '&#8681;';
+      const color   = improved ? 'var(--good)' : 'var(--poor)';
+      const bg      = improved ? 'var(--good-bg)' : 'var(--poor-bg)';
       const coreTag = m.core ? '<span class="cwv-core-tag">CWV</span>' : '';
       return `<tr>
         <td>${m.label}${coreTag}</td>
@@ -747,14 +768,13 @@ function renderChanges() {
       </tr>`;
     }).filter(Boolean);
 
-    const allGood = rows.every(r => r.includes('Improved'));
-    const allBad  = rows.every(r => r.includes('Declined'));
+    const allGood = rows.length && rows.every(r => r.includes('Improved'));
+    const allBad  = rows.length && rows.every(r => r.includes('Declined'));
     const statusBadge = !rows.length
       ? '<span class="badge badge-na">No change</span>'
       : allGood ? '<span class="badge badge-good">All improved</span>'
       : allBad  ? '<span class="badge badge-poor">All declined</span>'
       : '<span class="badge badge-warn">Mixed</span>';
-
     const emptyRow = rows.length === 0
       ? '<tr><td colspan="5" style="color:var(--text-3);font-size:13px;padding:12px 0">No measurable change between these two runs.</td></tr>'
       : '';
@@ -762,7 +782,7 @@ function renderChanges() {
     return `<div class="card card-accent" style="margin-bottom:1rem;overflow-x:auto">
       <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:1rem">
         <div>
-          <div style="font-size:15px;font-weight:700;color:var(--navy)">${esc(name)}</div>
+          <div style="font-size:15px;font-weight:700;color:var(--navy)">${esc(curr.name)}</div>
           <div style="font-size:12px;color:var(--text-3);margin-top:2px">${fmtRunLabel(prev.timestamp)} &rarr; ${fmtRunLabel(curr.timestamp)}</div>
         </div>
         ${statusBadge}
@@ -777,34 +797,28 @@ function renderChanges() {
   el.innerHTML = blocks.join('');
 }
 
-// ── Export helpers ────────────────────────────────────────
+// ── Export helpers ────────────────────────────────────────────────────────────
 function downloadCSV(filename, rows) {
-  const csv = rows.map(r => r.map(cell => {
+  const csv  = rows.map(r => r.map(cell => {
     const s = String(cell ?? '');
-    return s.includes(',') || s.includes('"') || s.includes('\n') ? `"${s.replace(/"/g, '""')}"` : s;
+    return s.includes(',') || s.includes('"') || s.includes('\n') ? `"${s.replace(/"/g,'""')}"` : s;
   }).join(',')).join('\r\n');
   const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = filename;
-  a.click();
+  const a    = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = filename; a.click();
   URL.revokeObjectURL(a.href);
-}
-
-function slugify(str) {
-  return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
 function printSection(titleText, subtitleText, sectionId, filename) {
   document.getElementById('print-title').textContent = titleText;
-  document.getElementById('print-date').textContent = subtitleText;
+  document.getElementById('print-date').textContent  = subtitleText;
   document.getElementById('print-header').style.display = 'block';
   document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
   document.getElementById(sectionId).style.display = 'block';
   const prevTitle = document.title;
-  document.title = filename;
+  document.title  = filename;
   window.print();
-  document.title = prevTitle;
+  document.title  = prevTitle;
   document.getElementById('print-header').style.display = 'none';
   document.querySelectorAll('.tab-content').forEach(el => el.style.display = '');
   switchTab(sectionId.replace('tab-', ''));
@@ -814,18 +828,18 @@ function exportClientPDF(clientId) {
   const r = state.results[clientId];
   if (!r) return;
   document.getElementById('print-title').textContent = r.name + ' — PageSpeed report';
-  document.getElementById('print-date').textContent = `Tested ${fmtRunLabel(r.timestamp)} · Sharp Ahead`;
+  document.getElementById('print-date').textContent  = `Tested ${fmtRunLabel(r.timestamp)} · Sharp Ahead`;
   document.getElementById('print-header').style.display = 'block';
   document.querySelectorAll('.result-block').forEach(el => {
     el.style.display = el.dataset.clientId === clientId ? 'block' : 'none';
   });
   document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
   document.getElementById('tab-results').style.display = 'block';
-  const date = new Date().toISOString().slice(0,10);
+  const date      = new Date().toISOString().slice(0,10);
   const prevTitle = document.title;
-  document.title = `Sharp Ahead — ${r.name} — PageSpeed — ${date}`;
+  document.title  = `Sharp Ahead — ${r.name} — PageSpeed — ${date}`;
   window.print();
-  document.title = prevTitle;
+  document.title  = prevTitle;
   document.getElementById('print-header').style.display = 'none';
   document.querySelectorAll('.result-block').forEach(el => el.style.display = '');
   document.querySelectorAll('.tab-content').forEach(el => el.style.display = '');
@@ -835,34 +849,34 @@ function exportClientPDF(clientId) {
 function exportHistoryPDF() {
   if (!state.history.length) { alert('No history to export.'); return; }
   const date = new Date().toISOString().slice(0,10);
-  const now = new Date().toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric' });
+  const now  = new Date().toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric' });
   printSection('PageSpeed history', `Exported ${now} · Sharp Ahead`, 'tab-history', `Sharp Ahead — PageSpeed History — ${date}`);
 }
 
 function exportChangesPDF() {
-  const clientIds = [...new Set(state.history.map(h => h.clientId))];
+  const clientIds  = [...new Set(state.history.map(h => h.clientId))];
   const comparable = clientIds.filter(id => state.history.filter(h => h.clientId === id).length >= 2);
   if (!comparable.length) { alert('Need at least two runs per client to export changes.'); return; }
   const date = new Date().toISOString().slice(0,10);
-  const now = new Date().toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric' });
+  const now  = new Date().toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric' });
   printSection('PageSpeed changes', `Exported ${now} · Sharp Ahead`, 'tab-changes', `Sharp Ahead — PageSpeed Changes — ${date}`);
 }
 
 function exportHistoryCSV() {
   if (!state.history.length) { alert('No history to export.'); return; }
-  const rows = [['Client', 'URL', 'Run date', 'Mobile score', 'Desktop score', 'LCP mob (s)', 'CLS mob', 'INP mob (ms)', 'FCP mob (s)', 'TTFB mob (ms)', 'CWV pass']];
+  const rows   = [['Client','URL','Run date','Mobile score','Desktop score','LCP mob (s)','CLS mob','INP mob (ms)','FCP mob (s)','TTFB mob (ms)','CWV pass']];
   const sorted = [...state.history].sort((a,b) => a.name.localeCompare(b.name) || a.timestamp.localeCompare(b.timestamp));
   sorted.forEach(e => {
-    const m = e.mobile.field || e.mobile.lab;
+    const m       = e.mobile.field || e.mobile.lab;
     const cwvPass = ['lcp','cls','inp'].every(k => { const v = m?.[k]; return v == null || cwvStatus(k, v) !== 'poor'; });
     rows.push([
       e.name, e.url,
       new Date(e.timestamp).toLocaleString('en-GB'),
       e.mobile.score ?? '', e.desktop.score ?? '',
-      m?.lcp != null ? (m.lcp/1000).toFixed(2) : '',
-      m?.cls != null ? m.cls.toFixed(3) : '',
-      m?.inp != null ? Math.round(m.inp) : '',
-      m?.fcp != null ? (m.fcp/1000).toFixed(2) : '',
+      m?.lcp  != null ? (m.lcp/1000).toFixed(2) : '',
+      m?.cls  != null ? m.cls.toFixed(3) : '',
+      m?.inp  != null ? Math.round(m.inp) : '',
+      m?.fcp  != null ? (m.fcp/1000).toFixed(2) : '',
       m?.ttfb != null ? Math.round(m.ttfb) : '',
       cwvPass ? 'Pass' : 'Fail',
     ]);
@@ -872,38 +886,36 @@ function exportHistoryCSV() {
 }
 
 function exportChangesCSV() {
-  const clientIds = [...new Set(state.history.map(h => h.clientId))];
+  const clientIds  = [...new Set(state.history.map(h => h.clientId))];
   const comparable = clientIds.filter(id => state.history.filter(h => h.clientId === id).length >= 2);
   if (!comparable.length) { alert('Need at least two runs per client to export changes.'); return; }
-
-  const rows = [['Client', 'URL', 'Previous run', 'Latest run', 'Metric', 'Previous value', 'Latest value', 'Change', 'Direction']];
+  const rows = [['Client','URL','Previous run','Latest run','Metric','Previous value','Latest value','Change','Direction']];
   const METRICS = [
-    { key: 'mob_score', label: 'Mobile score',  get: e => e.mobile.score,                       fmt: v => v,                              unit: '',    higherBetter: true  },
-    { key: 'dsk_score', label: 'Desktop score', get: e => e.desktop.score,                      fmt: v => v,                              unit: '',    higherBetter: true  },
-    { key: 'lcp',       label: 'LCP (mob)',     get: e => (e.mobile.field||e.mobile.lab)?.lcp,  fmt: v => (v/1000).toFixed(2),            unit: 's',   higherBetter: false },
-    { key: 'cls',       label: 'CLS (mob)',     get: e => (e.mobile.field||e.mobile.lab)?.cls,  fmt: v => v.toFixed(3),                   unit: '',    higherBetter: false },
-    { key: 'inp',       label: 'INP (mob)',     get: e => (e.mobile.field||e.mobile.lab)?.inp,  fmt: v => Math.round(v),                  unit: 'ms',  higherBetter: false },
-    { key: 'fcp',       label: 'FCP (mob)',     get: e => (e.mobile.field||e.mobile.lab)?.fcp,  fmt: v => (v/1000).toFixed(2),            unit: 's',   higherBetter: false },
+    { key:'mob_score', label:'Mobile score',  get: e => e.mobile.score,                       fmt: v => v,                   unit:'',   higherBetter:true  },
+    { key:'dsk_score', label:'Desktop score', get: e => e.desktop.score,                      fmt: v => v,                   unit:'',   higherBetter:true  },
+    { key:'lcp',       label:'LCP (mob)',     get: e => (e.mobile.field||e.mobile.lab)?.lcp,  fmt: v => (v/1000).toFixed(2), unit:'s',  higherBetter:false },
+    { key:'cls',       label:'CLS (mob)',     get: e => (e.mobile.field||e.mobile.lab)?.cls,  fmt: v => v.toFixed(3),        unit:'',   higherBetter:false },
+    { key:'inp',       label:'INP (mob)',     get: e => (e.mobile.field||e.mobile.lab)?.inp,  fmt: v => Math.round(v),       unit:'ms', higherBetter:false },
+    { key:'fcp',       label:'FCP (mob)',     get: e => (e.mobile.field||e.mobile.lab)?.fcp,  fmt: v => (v/1000).toFixed(2), unit:'s',  higherBetter:false },
   ];
-
   comparable.forEach(id => {
-    const entries = state.history.filter(h => h.clientId === id).sort((a,b) => a.timestamp.localeCompare(b.timestamp));
-    const prev = entries[entries.length - 2];
-    const curr = entries[entries.length - 1];
+    const entries   = state.history.filter(h => h.clientId === id).sort((a,b) => a.timestamp.localeCompare(b.timestamp));
+    const prev      = entries[entries.length - 2];
+    const curr      = entries[entries.length - 1];
     const prevLabel = fmtRunLabel(prev.timestamp);
     const currLabel = fmtRunLabel(curr.timestamp);
     METRICS.forEach(m => {
       const vPrev = m.get(prev), vCurr = m.get(curr);
       if (vPrev == null || vCurr == null) return;
-      const delta = vCurr - vPrev;
+      const delta    = vCurr - vPrev;
       const improved = m.higherBetter ? delta > 0 : delta < 0;
-      const sign = delta > 0 ? '+' : '';
+      const sign     = delta > 0 ? '+' : '';
       rows.push([
         curr.name, curr.url, prevLabel, currLabel,
         m.label,
-        m.fmt(vPrev) + (m.unit ? m.unit : ''),
-        m.fmt(vCurr) + (m.unit ? m.unit : ''),
-        sign + m.fmt(delta) + (m.unit ? m.unit : ''),
+        m.fmt(vPrev) + m.unit,
+        m.fmt(vCurr) + m.unit,
+        sign + m.fmt(delta) + m.unit,
         delta === 0 ? 'No change' : improved ? 'Improved' : 'Declined',
       ]);
     });
@@ -912,45 +924,7 @@ function exportChangesCSV() {
   downloadCSV(`Sharp Ahead — PageSpeed Changes — ${date}.csv`, rows);
 }
 
-function exportDataBackup() {
-  const date = new Date().toISOString().slice(0, 10);
-  const blob = new Blob([JSON.stringify(state, null, 2)], { type: 'application/json' });
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = `Sharp Ahead — PSI Backup — ${date}.json`;
-  a.click();
-  URL.revokeObjectURL(a.href);
-}
-
-function importDataBackup(input) {
-  const file = input.files[0];
-  if (!file) return;
-  const reader = new FileReader();
-  reader.onload = e => {
-    try {
-      const imported = JSON.parse(e.target.result);
-      if (!imported.clients || !imported.results || !imported.history) {
-        alert('This doesn\'t look like a valid PSI backup file.');
-        return;
-      }
-      if (!confirm(`This will replace your current data with the backup. Continue?`)) return;
-      state = imported;
-      persist();
-      updateSetupBanner();
-      renderClients();
-      renderResults();
-      renderHistory();
-      renderChanges();
-      closeModal('modal-settings');
-      log('Data restored from backup.');
-    } catch {
-      alert('Could not read the file — make sure it\'s a valid PSI backup JSON.');
-    }
-  };
-  reader.readAsText(file);
-  input.value = '';
-}
-
+// ── UI helpers ────────────────────────────────────────────────────────────────
 function switchTab(id) {
   document.querySelectorAll('.tab').forEach((t, i) => t.classList.toggle('active', ['clients','results','history','changes'][i] === id));
   document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
@@ -959,29 +933,47 @@ function switchTab(id) {
 }
 
 function log(msg) { document.getElementById('status-log').innerHTML = msg; }
-function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function esc(s)   { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
-function openSettings() { document.getElementById('settings-apikey').value = state.apiKey || ''; document.getElementById('modal-settings').style.display = 'flex'; }
-function saveSettings() { state.apiKey = document.getElementById('settings-apikey').value.trim(); persist(); closeModal('modal-settings'); updateSetupBanner(); }
-function openAddClient() { document.getElementById('ac-name').value = ''; document.getElementById('ac-url').value = ''; document.getElementById('modal-add-client').style.display = 'flex'; }
+function openAddClient() {
+  document.getElementById('ac-name').value = '';
+  document.getElementById('ac-url').value  = '';
+  document.getElementById('modal-add-client').style.display = 'flex';
+}
 
-function saveClient() {
+async function saveClient() {
   const name = document.getElementById('ac-name').value.trim();
   const url  = document.getElementById('ac-url').value.trim();
   if (!name) { alert('Please enter a client name.'); return; }
   if (!url || !url.startsWith('http')) { alert('Please enter a valid URL starting with https://'); return; }
-  state.clients.push({ id: crypto.randomUUID(), name, url });
-  persist(); closeModal('modal-add-client'); renderClients();
-  document.getElementById('run-btn').disabled = !state.apiKey;
+  const btn = document.getElementById('save-client-btn');
+  btn.disabled = true; btn.textContent = 'Saving…';
+  try {
+    const id  = crypto.randomUUID();
+    const rec = await atCreate('Clients', { ClientId: id, Name: name, URL: url });
+    state.clients.push({ id, name, url, _airtableId: rec.id });
+    closeModal('modal-add-client');
+    renderClients();
+  } catch (e) {
+    alert('Could not save to Airtable: ' + e.message);
+  }
+  btn.disabled = false; btn.textContent = 'Add client';
 }
 
-function deleteClient(id) {
+async function deleteClient(id) {
   if (!confirm('Remove this client and all their results?')) return;
+  const client = state.clients.find(c => c.id === id);
+  try {
+    if (client?._airtableId) await atDelete('Clients', client._airtableId);
+    const result = state.results[id];
+    if (result?._airtableId) await atDelete('Results', result._airtableId);
+    const histItems = state.history.filter(h => h.clientId === id && h._airtableId);
+    await Promise.all(histItems.map(h => atDelete('History', h._airtableId)));
+  } catch (e) { console.warn('Delete error:', e.message); }
   state.clients = state.clients.filter(c => c.id !== id);
   delete state.results[id];
   state.history = state.history.filter(h => h.clientId !== id);
-  persist(); renderClients(); renderResults(); renderHistory();
-  document.getElementById('run-btn').disabled = !state.apiKey || !state.clients.length;
+  renderClients(); renderResults(); renderHistory();
 }
 
 function closeModal(id) { document.getElementById(id).style.display = 'none'; }
@@ -990,12 +982,20 @@ document.querySelectorAll('.modal-backdrop').forEach(el => {
   el.addEventListener('click', e => { if (e.target === el) el.style.display = 'none'; });
 });
 
-function updateSetupBanner() {
-  document.getElementById('setup-banner').style.display = state.apiKey ? 'none' : 'flex';
-  document.getElementById('run-btn').disabled = !state.apiKey || !state.clients.length;
+// ── Init ──────────────────────────────────────────────────────────────────────
+async function init() {
+  log('Loading data from Airtable&hellip;');
+  try {
+    await loadState();
+    log('');
+  } catch (e) {
+    log(`&#10007; Could not connect to Airtable: ${e.message}`);
+  }
+  renderClients();
+  renderResults();
+  renderHistory();
 }
 
-function init() { updateSetupBanner(); renderClients(); renderResults(); renderHistory(); }
 init();
 </script>
 </body>
